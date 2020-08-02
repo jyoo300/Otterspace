@@ -1,0 +1,54 @@
+.DashboardSection {
+  &__profile-name {
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+  }
+
+  &__profile-link {
+    color: #7B40F4;
+    font-size: 14px;
+  }
+
+  &__sidebar-link {
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+  }
+
+  &__border {
+    border-bottom: 3px solid #EDEDED;
+  }
+
+  &__workspace-title {
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+  }
+
+  &__project-link {
+    color: black;
+  }
+
+  &__project-link {
+    color: black;
+  }
+
+  &__create-workspace-title {
+    font-weight: bold;
+    color: #FAFAFA;
+  }
+
+  &__create-workspace-text {
+    color: #FAFAFA;
+  }
+
+  &__done-button {
+    color: #7B40F4;
+    font-weight: bold;
+  }
+
+  &__skip-for-now {
+    color: #FFFFFF;
+  }
+}

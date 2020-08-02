@@ -1,0 +1,32 @@
+.HomeSelector {
+  &__badge-text {
+    font-weight: bold;
+  }
+
+  &__time-posted {
+    position: sticky;
+    left: 1200px;
+    color: #9A9A9A;
+  }
+
+  &__no-classname {
+    font-weight: 500;
+    font-size: 21px;
+  }
+
+  &__no-classname {
+    color: #9A9A9A;
+  }
+
+  &__border {
+    border-bottom: 1px solid #EDEDED;
+  }
+
+  &__card-title {
+    font-weight: bold;
+  }
+
+  &__button-text {
+    font-weight: bold;
+  }
+}

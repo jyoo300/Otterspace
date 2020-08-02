@@ -1,0 +1,19 @@
+.KanbanSelector {
+  &__create-workspace-title {
+    font-weight: bold;
+    color: #FAFAFA;
+  }
+
+  &__create-workspace-text {
+    color: #FAFAFA;
+  }
+
+  &__done-button {
+    color: #7B40F4;
+    font-weight: bold;
+  }
+
+  &__kanban-label {
+    font-weight: bold;
+  }
+}
