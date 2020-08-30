@@ -31,7 +31,7 @@ This project uses the following libraries and services:
 - Database - [Cloud Firestore](https://firebase.google.com/products/firestore)
 - Contact Form - [Formspree](https://formspree.io)
 - Analytics - [Google Analytics](https://googleanalytics.com)
-- Hosting - [Vercel](https://vercel.com)
+- Hosting - [Firebase Hosting](https://firebase.google.com/docs/hosting)
 
 ## 📚 Guide
 
