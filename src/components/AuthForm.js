@@ -49,7 +49,6 @@ function AuthForm(props) {
   const onSubmit = ({ email, pass }) => {
     // Show pending indicator
     setPending(true);
-
     // Call submit handler for auth type
     submitHandlersByType[props.type]({
       email,

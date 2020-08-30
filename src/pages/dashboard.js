@@ -9,7 +9,7 @@ function DashboardPage(props) {
       textColor="dark"
       size="md"
       title="Home"
-      subtitle="Discover other students to work with by creating your own post or using the filters below."
+      subtitle="Discover other students to work with by creating your own post."
     ></DashboardSection>
   );
 }

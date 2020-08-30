@@ -10,12 +10,21 @@ import { useAuth } from "./../util/auth.js";
 import "./KanbanSelector.scss";
 
 function KanbanSelector(props) {
+  const [isHidden, cardIsHidden] = React.useState(false);
+  const showCard = () => {
+    cardIsHidden(false);
+  };
+
+  const hideCard = () => {
+    cardIsHidden(true);
+  };
+  
   const auth = useAuth();
 
   return (
     <Row className="justify-content-center pt-3">
       <Col xs={12} className="pb-5">
-        <Card className="w-100 bg-purple">
+        <Card className="w-100 bg-purple" hidden={isHidden}>
           <Card.Body className="text-center">
             <Card.Title>
               <h4 className="KanbanSelector__create-workspace-title">
@@ -24,11 +33,10 @@ function KanbanSelector(props) {
             </Card.Title>
             <Card.Text>
               <p className="KanbanSelector__create-workspace-text">
-                Customize your workspace any way you need it - templates
-                provided
+                Customize your workspace any way you need it!
               </p>
             </Card.Text>
-            <Button variant="light" size="md" className="px-4">
+            <Button variant="light" size="md" className="px-4" onClick={hideCard}>
               <span className="KanbanSelector__done-button">Done</span>
             </Button>
           </Card.Body>
@@ -55,7 +63,7 @@ function KanbanSelector(props) {
                 <Form.Group controlId="formEmail">
                   <Form.Control
                     type="text"
-                    placeholder="Untitled"
+                    placeholder={item.body}
                     as="textarea"
                     rows={4}
                   ></Form.Control>

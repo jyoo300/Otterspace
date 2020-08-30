@@ -16,19 +16,6 @@ import NotFoundPage from "./not-found.js";
 import Footer from "./../components/Footer";
 import "./../util/analytics.js";
 import { ProvideAuth } from "./../util/auth.js";
-import firebase from "./../util/firebase.js";
-
-// var firestore = firebase.firestore();
-
-// const docRef = firestore.doc("samples/sandwichData");
-
-// docRef.set({
-//   hotDogStatus: "lol",
-// }).then(function() {
-//   console.log("Status saved!");
-// }).catch(function (error) {
-//   console.log("Got an error: ", error);
-// });
 
 class App extends React.Component {
   constructor(props) {

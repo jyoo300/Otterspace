@@ -3,13 +3,12 @@ import Section from "./Section";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Avatar2 from "./Avatar2";
-import { Link } from "./../util/router.js";
 import SectionHeader from "./SectionHeader";
 import WorkspaceNav from "./WorkspaceNav";
 import KanbanSelector from "./KanbanSelector";
 import MoodboardSelector from "./MoodboardSelector";
 import ResourcesSelector from "./ResourcesSelector";
+import SidebarSection from "./SidebarSection";
 import "./WorkspaceSection.scss";
 
 function WorkspaceSection(props) {
@@ -31,63 +30,9 @@ function WorkspaceSection(props) {
       <Container fluid={true}>
         <Row>
           <Col xs={3} md={2} className="d-none d-sm-block">
-            <Container fluid={true}>
-              <Row>
-                <Col xs={12} className="text-center">
-                  <Avatar2
-                    src="https://i.ibb.co/sJVQKZD/Ellipse-32.png"
-                    size="56px"
-                  ></Avatar2>
-                </Col>
-                <Col xs={12} className="text-center mt-1">
-                  <span className="WorkspaceSection__profile-name" href="/">
-                    Natalie Raymond
-                  </span>
-                </Col>
-                <Col xs={12} className="text-center">
-                  <Link
-                    className="WorkspaceSection__profile-link"
-                    to="/settings/general"
-                  >
-                    Edit Profile
-                  </Link>
-                </Col>
-                <Col xs={12} className="mt-3">
-                  <Link
-                    className="WorkspaceSection__sidebar-link"
-                    to="/dashboard"
-                  >
-                    Home
-                  </Link>
-                </Col>
-                <Col xs={12} className="mt-3">
-                  <div className="WorkspaceSection__border"></div>
-                </Col>
-                <Col xs={12} className="mt-3">
-                  <span className="WorkspaceSection__workspace-title" href="/">
-                    WorkSpaces
-                  </span>
-                </Col>
-                <Col xs={12} className="mt-3">
-                  <Link
-                    className="WorkspaceSection__project-link"
-                    to="/kanban/moodboard"
-                  >
-                    Design Project 1
-                  </Link>
-                </Col>
-                <Col xs={12} className="mt-3">
-                  <Link
-                    className="WorkspaceSection__project-link"
-                    to="/kanban/moodboard"
-                  >
-                    Design Project 2
-                  </Link>
-                </Col>
-              </Row>
-            </Container>
+            <SidebarSection></SidebarSection>
           </Col>
-          <Col xs={9} md={10}>
+          <Col xs={7} md={8}>
             <SectionHeader
               title={props.title}
               subtitle={props.subtitle}
@@ -106,28 +51,23 @@ function WorkspaceSection(props) {
                   {
                     image: "https://i.ibb.co/ZfHX3d5/Ellipse-204.png",
                     id: "todo",
-                    name: "untitled",
+                    name: "Create a Moodboard",
                     label: "To-do",
-                    perks: ["Kanban", "Media", "Moodboard", "Progress Tracker"],
+                    body: "Create a moodboard for our project - images, screenshots, etc. - note"
                   },
                   {
                     image: "https://i.ibb.co/GxGSnnx/Ellipse-207.png",
                     id: "progress",
-                    name: "untitled",
+                    name: "Create a Moodboard",
                     label: "In Progress",
-                    perks: ["Kanban", "Calendar", "Media", "Links/Resources"],
+                    body: "Create a moodboard for our project - images, screenshots, etc. - note"
                   },
                   {
                     image: "https://i.ibb.co/kX0Nwwf/Ellipse-209.png",
                     id: "complete",
-                    name: "untitled",
+                    name: "Create a Moodboard",
                     label: "Complete",
-                    perks: [
-                      "Kanban",
-                      "Links/Resources",
-                      "Media",
-                      "Progress Tracker",
-                    ],
+                    body: "Create a moodboard for our project - images, screenshots, etc. - note"
                   },
                 ]}
               ></KanbanSelector>
@@ -153,13 +93,9 @@ function WorkspaceSection(props) {
               <ResourcesSelector
                 items={[
                   {
-                    image: "https://i.ibb.co/G2tGRYQ/Rectangle-359.png",
-                  },
-                  {
-                    image: "https://i.ibb.co/G2tGRYQ/Rectangle-359.png",
-                  },
-                  {
-                    image: "https://i.ibb.co/G2tGRYQ/Rectangle-359.png",
+                    image: "https://i.ibb.co/mTVkRp5/Rectangle-361-1.png",
+                    title: "How to improve your visual design skills",
+                    description: "Description of the resource",
                   },
                 ]}
               ></ResourcesSelector>

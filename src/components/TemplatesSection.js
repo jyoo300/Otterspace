@@ -24,9 +24,9 @@ function TemplatesSection(props) {
         <TemplateSelector
           items={[
             {
-              avatar: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
-              name: "John Smith",
-              role: "Software Engineer",
+              avatar: "https://i.ibb.co/xhV9V3h/Ellipse-241.png",
+              name: "Gary Wu",
+              role: "Product Manager",
               bio:
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
               twitterUrl: "https://twitter.com",
@@ -34,9 +34,9 @@ function TemplatesSection(props) {
               linkedinUrl: "https://linkedin.com",
             },
             {
-              avatar: "https://uploads.divjoy.com/pravatar-150x-35.jpeg",
-              name: "Lisa Zinn",
-              role: "Software Engineer",
+              avatar: "https://i.ibb.co/X8Lf1yP/Ellipse-242.png",
+              name: "Melissa Relgado",
+              role: "Product Designer",
               bio:
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
               twitterUrl: "https://twitter.com",
@@ -44,9 +44,19 @@ function TemplatesSection(props) {
               linkedinUrl: "https://linkedin.com",
             },
             {
-              avatar: "https://uploads.divjoy.com/pravatar-150x-16.jpeg",
-              name: "Diana Low",
-              role: "Designer",
+              avatar: "https://i.ibb.co/LzkPkvL/Ellipse-243.png",
+              name: "John Yoo",
+              role: "Developer",
+              bio:
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
+              twitterUrl: "https://twitter.com",
+              facebookUrl: "https://facebook.com",
+              linkedinUrl: "https://linkedin.com",
+            },
+            {
+              avatar: "https://i.ibb.co/9gSkCQh/Ellipse-262.png",
+              name: "Emily Chung",
+              role: "The Best Mentor",
               bio:
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
               twitterUrl: "https://twitter.com",

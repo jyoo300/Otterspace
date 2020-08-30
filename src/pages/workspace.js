@@ -13,7 +13,7 @@ function WorkspacePage(props) {
       size="md"
       bgImage=""
       bgImageOpacity={1}
-      title="Untitled"
+      title="Website Redesign"
       subtitle=""
       section={router.query.section}
       key={router.query.section}

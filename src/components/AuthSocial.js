@@ -18,6 +18,7 @@ function AuthSocial(props) {
   };
 
   const onSigninWithProvider = (provider) => {
+    console.log('lol');
     setPending(provider);
     auth
       .signinWithProvider(provider)

@@ -99,7 +99,7 @@ function Contact(props) {
           ></FormField>
         </Form.Group>
         <Button
-          variant={props.buttonColor}
+          variant="purple"
           size={props.inputSize}
           type="submit"
           disabled={pending}

@@ -23,7 +23,7 @@ function SectionHeader2(props) {
           )}
         </Col>
         <Col className="text-right">
-          <Button variant="white" size="md">
+          <Button variant="white" size="md" onClick={props.onClick}>
             Create a post
           </Button>
         </Col>

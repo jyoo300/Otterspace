@@ -11,8 +11,7 @@ function TemplateSelector(props) {
         <Col
           xs={12}
           md={6}
-          lg={4}
-          className="py-3 d-flex align-items-stretch"
+          lg={3}
           key={index}
         >
           <Card>
@@ -20,7 +19,6 @@ function TemplateSelector(props) {
               <Avatar src={item.avatar} alt={item.name} size="128px"></Avatar>
               <h6 className="font-weight-bold mb-0 mt-4">{item.name}</h6>
               <small>{item.role}</small>
-              <Card.Text className="mt-4">{item.bio}</Card.Text>
             </Card.Body>
           </Card>
         </Col>
